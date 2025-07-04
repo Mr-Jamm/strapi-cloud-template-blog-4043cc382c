@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prizes",
+  "info": {
+    "singularName": "prize",
+    "pluralName": "prizes",
+    "displayName": "Prize"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
